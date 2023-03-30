@@ -28,13 +28,13 @@ emotion_dict = {"happy": "😄", "sadness": "😢", "love": "😍", "anger": "�
 
 
 def main():
-    st.title("Emotion Detection App")
+    st.title("Sentiment Analysis App")
 
     menu = ["Home", "Search by Emotion", "About"]
     with st.sidebar:
 
         choice = option_menu("Main Menu", menu,
-                             icons=['house', 'emoji-sunglasses', 'hash', 'at', 'info-circle'], menu_icon="cast", default_index=1)
+                             icons=['house', 'emoji-sunglasses', 'info-circle'], menu_icon="cast", default_index=1)
 
     if choice == "Home":
         st.subheader("Home-Emotion In Text")
@@ -78,7 +78,7 @@ def main():
 
     else:
         st.subheader("About the App")
-
+        st.markdown("Welcome to our **:red[Sentiment analysis]** web app! We help you analyze text/tweets and gauge the sentiment behind them. Our app uses advanced machine learning algorithms to accurately identify and classify tweets as different emotions or sentiments. Try it out now and see what Twitter users are saying or just how you feel about literally anything!")
 
 if __name__ == '__main__':
     main()
