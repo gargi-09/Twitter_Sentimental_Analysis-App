@@ -24,7 +24,7 @@ def get_prediction_proba(doc):
 
 
 emotion_dict = {"happy": "😄", "sadness": "😢", "love": "😍", "anger": "😠", "fear": "😨😱",
-                "surprise-curiosity": "😮🤔", "neutral": "😐", "hate": "😡", "gratitude": "🤗"}
+                "surprise-curiosity": "😮🤔", "neutral": "😐", "hate": "😡", "gratitude": "🤗","excitement" : "🥳"}
 
 
 def main():
